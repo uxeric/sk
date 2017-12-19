@@ -1,0 +1,27 @@
+{
+
+  "manifest_version": 2,
+  "name": "Shortcut Keys",
+  "version": "1.0.1",
+
+  "description": "Adds shortcut keys on elements based on url and css selectors",
+  "homepage_url": "https://github.com/uxeric",
+
+  "icons": {
+    "48": "icons/sk-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/jquery.js", "js/sk.js"]
+    }
+  ],
+
+  "applications": {
+    "gecko": {
+      "id": "eric@uxeric.com"
+    }
+  }
+
+}
